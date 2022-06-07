@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Marriage Calculator</title>
+</head>
+
+<!-- body section  -->
+<body>
+
+
+
+<!-- main container start -->
+
+<div class="container my-5" >
+    <div class="row justify-content-center" id="main">
+        <div class="col-md-5">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h1 class="text-center text-primary">Marriage Calculator</h1>
+                </div>
+
+                <div class="card-body">
+ <!-- masssagee section  -->
+                    <div class="msg">
+                        
+                    </div>
+
+
+<!-- form section  -->
+                    <form action="" id="age_calculate_form">
+                        <div class="my-2">
+                            <label for="">Name</label>
+                            <input id="name" type="text" class="form-control">
+                        </div>
+                        <div class="my-2">
+                            <label for="">Birth Date</label>
+                            <input id="birth_date" type="date" class="form-control">
+                        </div>
+                        <div class="my-2">
+                            <label for="">Present Date</label>
+                            <input id="present_date" type="date" class="form-control">
+                        </div>
+ <!-- submit and reset button section  -->
+                        <div class="my-2 text-center">
+                            <button id="btn" class="bnt btn-danger p-1" type="submit">Submit</button>
+                            <button id="reset" class="bnt btn-warning mx-2 p-1" type="submit">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- result section  -->
+
+    <!-- result headre  -->
+<div class="row my-5 d-none justify-content-center" id="result_box">
+    <div class="col-md-5">
+        <div class="card shadow p-2">
+            <div class="card-header">
+                <h1 class="card-title text-center text-primary">Marriage Result</h1>
+            </div>
+
+  <!-- result showing section  -->
+            <div class="card-body text-center">
+                <h2 id="name-res" class="card-text text-danger"></h2>
+                <h4 id="birth_date-res" class="card-text text-success"></h4>
+                <h4 id="present_date-res" class="card-text text-danger"></h4>
+                <h4 id="age" class="card-text text-warning"></h4>
+                <h2 id="marriage" class="card-text text-danger"></h2>
+            </div>
+
+  <!-- return button section  -->
+            <div class="my-2 text-center">
+                <button id="return" class="btn btn-danger ">Return</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- js import section  -->
+</div>
+    <script src="app.js"></script>
+    <script src="function.js"></script>
+</body>
+</html>
